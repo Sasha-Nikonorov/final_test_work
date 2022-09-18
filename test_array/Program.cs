@@ -19,7 +19,11 @@ void ThreeSymbolArray(string[] array)
         if (array[i].Length <= 3)
         {
             stringarray[i] = array[i];
-            Console.Write($"{stringarray[i]}");
+            Console.Write($"{stringarray[i]} ");
         }
     }
 }
+string[] array = { "hello", "2", "world", ":-)", "1234", "1567", "-2", "computer science", "Russia", "Denmark", "Kazan", "GG", "11", "(_)" };
+PrintArray(array);
+Console.WriteLine();
+ThreeSymbolArray(array);
