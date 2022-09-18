@@ -11,3 +11,15 @@
     Console.Write("]");
     Console.WriteLine();
 }
+void ThreeSymbolArray(string[] array)
+{
+    string[] stringarray = new string[array.Length];
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length <= 3)
+        {
+            stringarray[i] = array[i];
+            Console.Write($"{stringarray[i]}");
+        }
+    }
+}
